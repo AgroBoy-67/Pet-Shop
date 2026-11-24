@@ -20,7 +20,7 @@ const db = mysql.createPool({
     password: process.env.DB_PASSWORD,
     database: process.env.DB_NAME,
     ssl: ssl,
-    waitforConnections: true,
+    waitForConnections: true,
     connectionLimit: 5,
     queueLimit: 0
 })
